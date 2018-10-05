@@ -115,6 +115,13 @@ nav h1 a {
   flex-wrap: wrap;
   padding-bottom: 3%;
 }
+.filter-options-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 100%;
+}
 .filter-options h2 {
   color: white;
   font-size: 1rem;
@@ -132,6 +139,7 @@ nav h1 a {
   letter-spacing: 0;
   padding: 0 10px;
   width: 210px;
+  margin: 4px;
 }
 
 /* ====================== Restaurant Listing ====================== */
@@ -384,39 +392,15 @@ nav h1 a {
   /* ====================== Map ====================== */
   #map {
     height: 340px;
-    width: 100%;
-    background-color: #ccc;
   }
   /* ====================== Restaurant Filtering ====================== */
-  /* .filter-options {
-    width: 100%;
-    height: 120px;
-    background-color: #3397DB;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-bottom: 3%;
+  .filter-options {
+    height: 66px;
+    padding-top: 2%;
   }
-  .filter-options h2 {
-    color: white;
-    font-size: 1rem;
-    font-weight: normal;
-    margin: 0px;
-    width: 100%;
-    text-align: center;
+  .filter-options-container {
+    width: 60%;
   }
-  .filter-options select {
-    background-color: white;
-    border: 1px solid #fff;
-    font-family: Arial,sans-serif;
-    font-size: 11pt;
-    height: 35px;
-    letter-spacing: 0;
-    padding: 0 10px;
-    width: 210px;
-  } */
   
   /* ====================== Restaurant Listing ====================== */
   /* #restaurants-list {
@@ -667,40 +651,21 @@ nav h1 a {
   } */
   /* ====================== Map ====================== */
   #map {
-    height: 456px;
+    height: 520px;
     width: 100%;
     background-color: #ccc;
   }
   /* ====================== Restaurant Filtering ====================== */
-  /* .filter-options {
-    width: 100%;
-    height: 120px;
-    background-color: #3397DB;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-bottom: 3%;
+  .filter-options-container {
+    width: 60%;
+  }
+  .filter-options {
+    height: 86px;
+    padding-top: 2%;
   }
   .filter-options h2 {
-    color: white;
-    font-size: 1rem;
-    font-weight: normal;
-    margin: 0px;
-    width: 100%;
-    text-align: center;
+    font-size: 1.5rem;
   }
-  .filter-options select {
-    background-color: white;
-    border: 1px solid #fff;
-    font-family: Arial,sans-serif;
-    font-size: 11pt;
-    height: 35px;
-    letter-spacing: 0;
-    padding: 0 10px;
-    width: 210px;
-  } */
   
   /* ====================== Restaurant Listing ====================== */
   /* #restaurants-list {
