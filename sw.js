@@ -33,6 +33,7 @@ let urlsToCache = [
     '/img/10.jpg'
 ];
 
+// create cache on install
 self.addEventListener('install', function(event){
     event.waitUntil(
         caches.open(staticCacheName).then(function(cache){
@@ -41,6 +42,7 @@ self.addEventListener('install', function(event){
     );
 });
 
+// custom response with cache
 self.addEventListener('fetch', function(event){
     event.respondWith(
         caches.match(event.request).then(function(response){
@@ -65,9 +67,10 @@ self.addEventListener('fetch', function(event){
     )
 });
 
+// update cache
 self.addEventListener('activate', function(event) {
     event.waitUntil(
-      caches.keys().then(function(cacheNames) {
+      caches.keys().then(function(cacheNames){
         return Promise.all(
             cacheNames.filter(function(cacheName){
                 return cacheName.startsWith('cache_') &&

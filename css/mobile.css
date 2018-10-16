@@ -1,12 +1,11 @@
 @media screen and (min-width: 320px) and (max-width: 765px) {
-  /* ====================== Map ====================== */
+    /* ====================== Map ====================== */
     #map {
         height: 34em;
         width: 100%;
         background-color: #ccc;
     }
-
-  /* ====================== Navigation ====================== */
+    /* ====================== Navigation ====================== */
     nav {
         width: 100%;
         background-color: #252831;
@@ -30,32 +29,27 @@
         font-size: 17px;
         margin: 0;
     }
-    
     /* Display list items side by side */
     #breadcrumb li {
         display: inline;
     }
-    
     /* Add a slash symbol (/) before/behind each list item */
     #breadcrumb li+li:before {
         padding: 8px;
         color: black;
         content: "/\00a0";
     }
-    
     /* Add a color to all links inside the list */
     #breadcrumb li a {
         color: #0275d8;
         text-decoration: none;
     }
-    
     /* Add a color on mouse-over */
     #breadcrumb li a:hover {
         color: #01447e;
         text-decoration: underline;
     }
-
-  /* ====================== Restaurant Filtering ====================== */
+    /* ====================== Restaurant Filtering ====================== */
     .filter-options {
         width: 100%;
         height: 120px;
@@ -93,8 +87,7 @@
         width: 210px;
         margin: 4px;
     }
-  
-  /* ====================== Restaurant Listing ====================== */
+    /* ====================== Restaurant Listing ====================== */
     #restaurants-list {
         background-color: #f3f3f3;
         list-style: outside none none;
@@ -117,7 +110,6 @@
         width: 270px;
         display: flex;
         flex-direction: column;
-    
     }
     #restaurants-list .restaurant-img {
         background-color: #ccc;
@@ -153,8 +145,7 @@
         text-decoration: none;
         text-transform: uppercase;
     }
-  
-  /* ====================== Restaurant Details ====================== */
+    /* ====================== Restaurant Details ====================== */
     .inside header {
         position: fixed;
         top: 0;
